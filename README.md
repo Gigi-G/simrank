@@ -161,7 +161,7 @@ Project Link: [https://github.com/Gigi-G/simrank](https://github.com/Gigi-G/simr
 [issues-shield]: https://img.shields.io/github/issues/Gigi-G/simrank.svg?style=for-the-badge
 [issues-url]: https://github.com/Gigi-G/simrank/issues
 [license-shield]: https://img.shields.io/github/license/Gigi-G/simrank.svg?style=for-the-badge
-[license-url]: https://github.com/Gigi-G/simrank/blob/master/LICENSE
+[license-url]: https://github.com/Gigi-G/simrank/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://it.linkedin.com/in/luigi-seminara-3bb2a2204
 [product-screenshot]: images/screenshot.png
