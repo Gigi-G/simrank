@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/Gigi-G/simrank" target="_blank">
-    <img src="img/hadoop.png" alt="Logo" width="280" height="80"><img src="img/Scala.png" alt="Logo" width="80" height="80"><img src="img/Spark.png" alt="Logo" width="180" height="80">
+    <img src="img/Hadoop.png" width="280" height="80"><img src="img/Scala.png" width="80" height="80"><img src="img/Spark.png" width="180" height="80">
   </a>
 
 
