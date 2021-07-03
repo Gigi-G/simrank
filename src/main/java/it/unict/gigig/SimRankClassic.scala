@@ -142,7 +142,7 @@ object SimRankClassic {
         }
     }
 
-    val conf = new SparkConf().setAppName("learn").setMaster("local")
+    val conf = new SparkConf().setAppName("SimRankClassic")
     val sc = new SparkContext(conf)
 
     val inputGraph = GraphLoader.edgeListFile(sc, inputFile)

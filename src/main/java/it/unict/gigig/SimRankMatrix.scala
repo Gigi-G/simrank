@@ -97,7 +97,7 @@ object SimRankMatrix {
         }
     }
 
-    val conf = new SparkConf().setAppName("learn").setMaster("local")
+    val conf = new SparkConf().setAppName("SimRankMatrix")
     val sc = new SparkContext(conf)
 
     val inputGraph = GraphLoader.edgeListFile(sc, "hdfs://192.168.1.21:9000/simrank/input/" + inputFile)
