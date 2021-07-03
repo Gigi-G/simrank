@@ -48,6 +48,7 @@ object SimRankMatrix {
     }
 
     sc.parallelize(save).saveAsTextFile("hdfs://192.168.1.21:9000/simrank/output")
+    println("The result has been saved on hadoop.")
     //printMatrix(S, dim)
   }
 
@@ -73,6 +74,11 @@ object SimRankMatrix {
 
   def main(args: Array[String]): Unit = {
 
+    Logger.getLogger("warn").setLevel(Level.OFF)
+    Logger.getLogger("org").setLevel(Level.OFF)
+    Logger.getLogger("akka").setLevel(Level.OFF)
+    Logger.getLogger("info").setLevel(Level.OFF)
+
     if(args.length != 3) {
       printError
     }
@@ -93,8 +99,6 @@ object SimRankMatrix {
 
     val conf = new SparkConf().setAppName("learn").setMaster("local")
     val sc = new SparkContext(conf)
-
-    Logger.getLogger("org").setLevel(Level.OFF)
 
     val inputGraph = GraphLoader.edgeListFile(sc, "hdfs://192.168.1.21:9000/simrank/input/" + inputFile)
     //val inputGraph = GraphLoader.edgeListFile(sc, inputFile)

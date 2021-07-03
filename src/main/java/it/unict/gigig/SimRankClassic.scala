@@ -119,6 +119,11 @@ object SimRankClassic {
 
   def main(args: Array[String]): Unit = {
 
+    Logger.getLogger("warn").setLevel(Level.OFF)
+    Logger.getLogger("org").setLevel(Level.OFF)
+    Logger.getLogger("akka").setLevel(Level.OFF)
+    Logger.getLogger("info").setLevel(Level.OFF)
+
     if(args.length != 3) {
       printError
     }
@@ -139,8 +144,6 @@ object SimRankClassic {
 
     val conf = new SparkConf().setAppName("learn").setMaster("local")
     val sc = new SparkContext(conf)
-
-    Logger.getLogger("org").setLevel(Level.OFF)
 
     val inputGraph = GraphLoader.edgeListFile(sc, inputFile)
     
